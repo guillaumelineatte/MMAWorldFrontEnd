@@ -1,0 +1,491 @@
+  <!DOCTYPE html>
+  <html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+      <script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+
+    <!--
+      - primary meta tags
+    -->
+    <title>MMAWorld</title>
+    <meta name="title" content="MMAWorld">
+    <meta name="description" content="Site sur le MMA mondial">
+
+    <!--
+      - favicon
+    -->
+    <link rel="shortcut icon" href="./assets/images/MMAWorld.png" type="image/svg+xml">
+
+    <!--
+      - google font link
+    -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;700&display=swap" rel="stylesheet">
+
+    <!--
+      - custom css link
+    -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+  </head>
+
+  <body>
+
+    <!--
+      - #HEADER
+    -->
+
+    <header class="header" data-header>
+      <div class="container">
+
+        <a href="#" class="logo">
+          <img src="./assets/images/MMAWorld.png" width="100" height="100" alt="" class="logo-light">
+
+          <img src="./assets/images/MMAWorld.png" width="100" height="100" alt="" class="logo-dark">
+        </a>
+
+        <nav class="navbar" data-navbar>
+
+          <div class="navbar-top">
+            <a href="#" class="logo">
+              <img src="./assets/images/MMAWorld.png" width="100" height="100" alt="" class="logo">
+            </a>
+
+            <button class="btn nav-close-btn flex-end" aria-label="close menu" data-nav-toggler>
+              <ion-icon name="close-outline" aria-hidden="true"></ion-icon>
+          </button>
+          </div>
+
+          <ul class="navbar-list">
+
+            <li>
+              <a href="#home" class="navbar-link">Accueil</a>
+            </li>
+
+            <li>
+              <a href="#organisation" class="navbar-link">Organisations</a>
+            </li>
+
+            <li>
+              <a href="#histoireMma" class="navbar-link">Histoire MMA</a>
+            </li>
+
+            <li>
+              <a href="#equipment" class="navbar-link">Equipement et alimentation</a>
+            </li>
+
+            <li>
+              <a href="#contact" class="navbar-link">Contact</a>
+            </li>
+
+          </ul>
+
+          <div class="wrapper">
+            <a href="mailto:info@email.com" class="contact-link">MMAWorld@gmail.com</a>
+          </div>
+
+          <ul class="social-list">
+
+            <li>
+              <a href="https://www.linkedin.com/in/guillaume-lineatte/" class="social-link">
+                <ion-icon name="logo-linkedin"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="https://github.com/guillaumelineatte" class="social-link">
+                <ion-icon name="logo-github"></ion-icon>
+              </a>
+          </li>
+
+          </ul>
+
+        </nav>
+
+        <button class="nav-open-btn" aria-label="open menu" data-nav-toggler>
+          <ion-icon name="menu-outline" aria-hidden="true"></ion-icon>
+        </button>
+
+        <div class="overlay" data-nav-toggler data-overlay></div>
+
+      </div>
+    </header>
+
+
+
+
+
+    <main>
+      <article>
+
+        <!--
+          - #CAROUSEL
+        -->
+
+        <section class="section carousel has-bg-image" aria-label="home" style="background-image: url('./assets/images/blackground.png')" id="home">
+          <div>
+              <div class="carousel-content"></div>
+              <div class="carousel-slider" data-slider>
+                  <div class="slider-inner">
+                      <ul class="slider-container" data-slider-container>
+                          <li class="slider-item">
+                              <div>
+                                  <div class="carousel-item active">
+                                      <img src="./assets/images/perreira300.png" width="575" height="550" alt="" class="img-cover">
+                                      <div class="carousel-caption" style="display: flex; flex-direction: column; align-items: center; justify-content: flex-start; top: 60%; position: absolute; left: 50%; transform: translateX(-50%); width: 100%;">
+                                          <h1 class="display-2 text-center mb-3">UFC 300 : Perreira VS Adesanya 3 ?!</h1>
+                                          <div>
+                                              <!-- Utilisation des modales Bootstrap -->
+                                              <button type="button" class="btn btn-outline-light me-2" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                                  Lire l'article
+                                              </button>
+                                              <button type="button" class="btn btn-primary">Acheter sa place pour l'UFC 300</button>
+                                          </div>
+                                      </div>
+                                  </div>
+                              </div>
+                          </li>
+                      </ul>
+                  </div>
+                  <button class="slider-btn prev" aria-label="slide to previous" data-slider-prev>
+                      <ion-icon name="arrow-back"></ion-icon>
+                  </button>
+                  <button class="slider-btn next" aria-label="slide to next" data-slider-next>
+                      <ion-icon name="arrow-forward"></ion-icon>
+                  </button>
+              </div>
+          </div>
+      </section>
+
+      <!-- Modale Bootstrap -->
+      <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered">
+              <div class="modal-content">
+                  <div class="modal-header">
+                      <h5 class="modal-title" id="exampleModalLabel">Titre de la Modale</h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                      Contenu de la modale
+                  </div>
+                  <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fermer</button>
+                      <button type="button" class="btn btn-primary">Sauvegarder</button>
+                  </div>
+              </div>
+          </div>
+      </div>
+
+
+
+
+
+
+
+        <!--
+          - #ORGANISATION
+        -->
+        <section id="organisation">
+          <div class="container-fluid padding">
+              <div class="row welcome text-center">
+                  <div class="col-12">
+                      <br><br><br><br><br>
+                      <h1 class="display-4">Retrouve les news de ton organisation préférée !</h1>
+                  </div>
+                  <hr>
+                  <div class="col-12">
+                      <p class="lead"></p>
+                  </div>
+              </div>
+          </div>
+          <div class="container-fluid padding">
+              <div class="row padding justify-content-center"><!-- Ajout de la classe justify-content-center -->
+                  <div class="col-md-4">
+                      <div class="card card-height-org">
+                          <img class="card-img-top card-img-org" src="./assets/images/ufc-logo.jpg"/>
+                          <div class="card-body text-center">
+                              <a href="./assets/html/ufc.html" class="btn btn-outline-secondary"  data-bs-dismiss="modal">Voir les actualités de l'UFC</a>
+                          </div>
+                      </div>
+                  </div>
+
+                  <div class="col-md-4">
+                      <div class="card card-height-org">
+                          <img class="card-img-top card-img-org pfl-logo" src="./assets/images/pfl.png"/>
+                          <div class="card-body text-center">
+                              <a href="#" class="btn btn-outline-secondary">Voir les actualités du PFL</a>
+                          </div>
+                      </div>
+                  </div>
+
+                  <div class="col-md-4">
+                      <div class="card card-height-org">
+                          <img class="card-img-top card-img-org" src="./assets/images/oneCH.jpeg"/>
+                          <div class="card-body text-center">
+                              <a href="#" class="btn btn-outline-secondary">Voir les actualités du ONE FC</a>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </section>
+
+
+
+
+
+
+        <!--
+          - #HISTOIRE
+        -->
+
+        <section class="about" aria-labelledby="about-label" id="histoireMma">
+          <div class="container container-fluid padding">
+            <br><br><br><br><br><br>
+            <div class="row padding">
+                <div class="col-md-12 col-lg-6">
+                    <h1 class="histoire-title">Histoire du MMA</h1>
+                    <hr class="my-4">
+                    <p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                        Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                        <p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                            <p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                                Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                                <p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                                    Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                    <br>
+                    <a href="#" class="btn btn-primary btn-lg">Lire plus</a>
+                </div>
+                <div class="col-lg-6">
+                    <img src="./assets/images/Gracie-Shamrock.webp" class="img-fluid"/>
+                </div>
+            </div>
+        </div>
+        </section>
+
+
+
+        <!--
+          - #EQUIPMENT
+        -->
+
+        <section class="section feature" aria-labelledby="feature-label" id="equipment">
+          <div class="">
+          <hr class="my-4">
+
+      <figure>
+          <div class="fixed-wrap">
+              <div id="fixed">
+              </div>
+          </div>
+      </figure>
+
+      <div class="container-fluid padding">
+          <div class="row welcome text-center">
+              <div class="col-12">
+                  <h1 class="display-4">Les produits les plus importants pour la pratique du MMA !</h1>
+              </div>
+          </div>
+      </div>
+
+      <div class="container-fluid padding">
+          <div class="row padding">
+              <div class="col-md-4">
+                  <div class="card card-height">
+                      <img class="card-img-top card-img-shop" src="./assets/images/equipement.webp"/>
+                      <div class="card-body text-center">
+                          <a href="#" class="btn btn-outline-secondary">Voir les équipements</a>
+                      </div>
+                  </div>
+              </div>
+
+              <div class="col-md-4">
+                  <div class="card card-height">
+                      <img class="card-img-top card-img-shop" src="./assets/images/vetement.jpeg"/>
+                      <div class="card-body text-center">
+                          <a href="#" class="btn btn-outline-secondary">Voir les vêtements</a>
+                      </div>
+                  </div>
+              </div>
+
+              <div class="col-md-4">
+                  <div class="card card-height">
+                      <img class="card-img-top card-img-shop" src="./assets/images/whey.avif"/>
+                      <div class="card-body text-center">
+                          <a href="#" class="btn btn-outline-secondary">Voir les compléments alimentaires</a>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+    </div>
+        </section>
+
+        <!--
+          - #LASTACTU
+        -->
+
+        <section class="section project" aria-labelledby="project-label">
+          <div class="container container-fluid padding">
+            <div class="row padding">
+                <div class="col-md-12 col-lg-6">
+                    <h2>L'arrivée du Hall Of Fame à l'UFC</h2>
+                    <p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                        Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                        <p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                            <p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                                Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                                <p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                                    Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                    <br>
+                </div>
+                <div class="col-lg-6">
+                    <img src="./assets/images/GSP.webp    " class="img-fluid"/>
+                </div>
+            </div>
+            <hr class="my-4">
+        </div>
+        </section>
+
+
+        <!--
+          - #Contact
+        -->
+
+        <section class="contact" aria-label="call to action" id="contact">
+          <div class="container">
+
+            <h2 class="h2 section-title text-center">
+              Contacte nous !
+            </h2>
+
+            <a href="#" class="btn btn-primary">Try it For Free</a>
+
+          </div>
+        </section>
+
+      </article>
+    </main>
+
+
+
+
+    <!--
+      - #FOOTER
+    -->
+
+    <footer class="footer">
+      <div class="container grid-list">
+
+        <div class="footer-brand">
+
+          <a href="#" class="logo">
+            <img src="./assets/images/MMAWorld.png" width="74" height="24" alt="" class="logo">
+          </a>
+
+          <p class="footer-text">
+            &copy; 2024 MMAWorld. <br> Tous droits réservés. <br>Fait par Guillaume Linéatte.
+          </p>
+
+        </div>
+
+        <ul class="footer-list">
+          <li>
+            <p class="h4 footer-list-title">Rejoins-nous sur nos autres réseaux ! </p>
+
+            <a href="#" class="social-link-footer">
+              <ion-icon name="logo-twitter"></ion-icon>
+            </a>
+
+            <a href="#" class="social-link-footer">
+              <ion-icon name="logo-facebook"></ion-icon>
+            </a>
+            </li>
+        </ul>
+
+
+        <ul class="footer-list">
+
+          <li>
+            <p class="h4 footer-list-title">En savoir plus</p>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">A propos de nous</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Notre histoire</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Projets</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Conditions d'utilisation</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Privacy Policy</a>
+          </li>
+
+        </ul>
+
+        <div class="footer-list">
+
+          <p class="h4 footer-list-title">Notre Newsletter</p>
+
+          <p class="footer-text">
+            Inscris-toi à notre newsletter pour avoir toutes les dernières actualités de MMAWorld !
+          </p>
+
+          <form action="" class="input-wrapper">
+            <input type="email" name="email_address" placeholder="Email Address" required class="input-field">
+
+            <button type="submit" class="submit-btn">Rejoins-nous</button>
+          </form>
+
+        </div>
+
+      </div>
+    </footer>
+
+
+
+
+
+    <!--
+      - custom js link
+    -->
+    <script src="./assets/js/script.js"></script>
+    <script src="./assets/js/linkdata.js"></script>
+
+
+    <!--
+      - ionicon
+    -->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+  </body>
+
+  </html>
