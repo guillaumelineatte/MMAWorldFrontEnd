@@ -12,28 +12,16 @@
       <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
       <script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
 
-    <!--
-      - primary meta tags
-    -->
     <title>MMAWorld</title>
     <meta name="title" content="MMAWorld">
     <meta name="description" content="Site sur le MMA mondial">
-
-    <!--
-      - favicon
-    -->
     <link rel="shortcut icon" href="./assets/images/MMAWorld.png" type="image/svg+xml">
 
-    <!--
-      - google font link
-    -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;700&display=swap" rel="stylesheet">
 
-    <!--
-      - custom css link
-    -->
+
     <link rel="stylesheet" href="./assets/css/style.css">
   </head>
 
@@ -139,20 +127,59 @@
                           <li class="slider-item">
                               <div>
                                   <div class="carousel-item active">
-                                      <img src="./assets/images/perreira300.png" width="575" height="550" alt="" class="img-cover">
+                                      <img src="./assets/images/perreira.webp" width="575" height="550" alt="" class="img-cover">
                                       <div class="carousel-caption" style="display: flex; flex-direction: column; align-items: center; justify-content: flex-start; top: 60%; position: absolute; left: 50%; transform: translateX(-50%); width: 100%;">
-                                          <h1 class="display-2 text-center mb-3">UFC 300 : Perreira VS Adesanya 3 ?!</h1>
+                                          <h1 class="display-2 text-center mb-3">Perreira en poids lourds pour entrer dans la légende ?</h1>
                                           <div>
-                                              <!-- Utilisation des modales Bootstrap -->
                                               <button type="button" class="btn btn-outline-light me-2" data-bs-toggle="modal" data-bs-target="#exampleModal">
                                                   Lire l'article
                                               </button>
-                                              <button type="button" class="btn btn-primary">Acheter sa place pour l'UFC 300</button>
+                                              <button type="button" class="btn btn-primary">
+                                                <a href="https://www.ticketmaster.com/event/02006089A59220DF" target="_blank">Acheter sa place pour l'UFC 302</a>
+                                              </button>
                                           </div>
                                       </div>
                                   </div>
                               </div>
                           </li>
+
+                          <li class="slider-item">
+                            <div>
+                                <div class="carousel-item active">
+                                    <img src="./assets/images/mcgregor.jpg" width="575" height="550" alt="" class="img-cover">
+                                    <div class="carousel-caption" style="display: flex; flex-direction: column; align-items: center; justify-content: flex-start; top: 60%; position: absolute; left: 50%; transform: translateX(-50%); width: 100%;">
+                                        <h1 class="display-2 text-center mb-3">21/06 : Le retour tant attendu de McGregor</h1>
+                                        <div>
+                                            <button type="button" class="btn btn-outline-light me-2" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                                Lire l'article
+                                            </button>
+                                            <button type="button" class="btn btn-primary">
+                                              <a href="https://www.ticketmaster.com/event/02006089A59220DF" target="_blank">Acheter sa place pour l'UFC 302</a>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="slider-item">
+                          <div>
+                              <div class="carousel-item active">
+                                  <img src="./assets/images/doumbe.webp" width="575" height="550" alt="" class="img-cover">
+                                  <div class="carousel-caption" style="display: flex; flex-direction: column; align-items: center; justify-content: flex-start; top: 60%; position: absolute; left: 50%; transform: translateX(-50%); width: 100%;">
+                                      <h1 class="display-2 text-center mb-3">Bellator Paris : Cédric Doumbè retrouve le chemin de la victoire</h1>
+                                      <div>
+                                          <button type="button" class="btn btn-outline-light me-2" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                              Lire l'article
+                                          </button>
+                                          <button type="button" class="btn btn-primary">
+                                            <a href="https://www.ticketmaster.com/event/02006089A59220DF" target="_blank">Acheter sa place pour l'UFC 302</a>
+                                          </button>
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+                      </li>
                       </ul>
                   </div>
                   <button class="slider-btn prev" aria-label="slide to previous" data-slider-prev>
@@ -165,7 +192,6 @@
           </div>
       </section>
 
-      <!-- Modale Bootstrap -->
       <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
           <div class="modal-dialog modal-dialog-centered">
               <div class="modal-content">
@@ -207,7 +233,7 @@
               </div>
           </div>
           <div class="container-fluid padding">
-              <div class="row padding justify-content-center"><!-- Ajout de la classe justify-content-center -->
+              <div class="row padding justify-content-center">
                   <div class="col-md-4">
                       <div class="card card-height-org">
                           <img class="card-img-top card-img-org" src="./assets/images/ufc-logo.jpg"/>
@@ -221,7 +247,7 @@
                       <div class="card card-height-org">
                           <img class="card-img-top card-img-org pfl-logo" src="./assets/images/pfl.png"/>
                           <div class="card-body text-center">
-                              <a href="#" class="btn btn-outline-secondary">Voir les actualités du PFL</a>
+                              <a href="./assets/html/pfl.html" class="btn btn-outline-secondary">Voir les actualités du PFL</a>
                           </div>
                       </div>
                   </div>
@@ -230,7 +256,7 @@
                       <div class="card card-height-org">
                           <img class="card-img-top card-img-org" src="./assets/images/oneCH.jpeg"/>
                           <div class="card-body text-center">
-                              <a href="#" class="btn btn-outline-secondary">Voir les actualités du ONE FC</a>
+                              <a href="./assets/html/one.html" class="btn btn-outline-secondary">Voir les actualités du ONE FC</a>
                           </div>
                       </div>
                   </div>
@@ -254,23 +280,52 @@
                 <div class="col-md-12 col-lg-6">
                     <h1 class="histoire-title">Histoire du MMA</h1>
                     <hr class="my-4">
-                    <p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-                        Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                        <p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-                            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                            <p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-                                Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                                <p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-                                    Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                    <p class="lead mb-1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Le sport qu'est le MMA moderne n'est pas un descendant direct du sport antique
+                      qu'était le pancrace, on retrouve toutefois certains points communs entre ces deux disciplines
+                      séparées par plus de 2500 ans.
+                      Les premières traces de combat libre ont été attestées en Grèce, en Turquie, en Syrie, en Italie,
+                      en France, en Espagne, au Portugal, en Egypte et à Makthar en Tunisie ; de nombreux documents
+                      attestent que différentes formes locales anciennes de combat libre puisant leur origine dans le
+                      pancrace antique ont survécu jusqu’à notre époque. Le pancrace fut l'une des premières formes de
+                      sport de combat à mains nues avec tout de même un minimum de règles. Il fut introduit aux jeux
+                      olympiques antiques en 648 av. J.-C. Le mot « pancrace » est l'association du mot pan signifiant
+                      «tout» et kratos signifiant «puissances», décrivant bien le sport, mélange de boxe et de
+                      lutte. Le sport n'a alors que deux règles, ne pas mordre et ne pas frapper aux yeux, même si ces
+                      techniques sont autorisées chez les Spartiates. Les rencontres ne prennent fin que lorsque l'un
+                      des adversaires est inconscient ou se soumet en faisant signe de la main. Souvent, les
+                      affrontements durent des heures et finissent parfois avec la mort d'un, voire des deux
+                      combattants. Le pancrace devint le sport le plus populaire aux jeux olympiques et dans la Grèce antique.
+                      <br>
+                      Les rencontres prenaient place dans une arène, surface carrée d'environ 12 à 14 pieds de côté. Un
+                      arbitre armé d'un bâton ou d'un fouet, veillait à faire respecter les règles. Les techniques
+                      les plus souvent utilisées étaient les coups de poing, de genou, de coude et de pied, les clés
+                      articulaires et les étranglements. Les coups de pied aux jambes, à l'aine et au ventre étaient
+                      fréquents. Même si les échanges debout existaient, la grande majorité des combats se déroulaient
+                      au sol, où les prises de soumissions et les coups étaient permis. Les pratiquants du pancrace
+                      étaient réputés pour leurs aptitudes et leur habilité au corps à corps. La strangulation était
+                      la cause la plus commune des décès lors des combats. Les athlètes de pancrace en Grèce antique,
+                      les pancratiastes, devinrent des héros, et l'objet de nombreux mythes et légendes. Arrhichion,
+                      Dioxippos, Polydamas de Scotoussa ou Milon de Crotone sont ceux qui ont laissé le plus de traces.
+                      Alexandre le Grand cherchait à les recruter en tant que soldats, à cause de leur habileté
+                      légendaire au combat sans arme. Lorsqu'il envahit l'Inde en 326 av. J.-C., de nombreux
+                      pancratiastes combattaient dans ses rangs. Ce pourrait être l'origine des arts martiaux chinois,
+                      prenant souvent leur source en Inde à cette époque. Le pancrace est la toute première forme de
+                      combat connue de ce qui deviendra plus tard ce que l'on nomme maintenant les arts martiaux mixtes.
+                      <br>
+                      Le déclin du pancrace en Grèce, coïncidant avec la montée en puissance de l'Empire romain,
+                      vit des sports plus réglementés, tels que la lutte et la boxe, devenir les principales formes de
+                      combat en Occident, alors que les arts martiaux traditionnels se développaient en Asie.
+                      Cette situation perdura au cours de siècles, et était toujours présente en 1925, lorsque le
+                      combat libre fit son apparition à Rio de Janeiro au Brésil.
+                    </p>
                     <br>
-                    <a href="#" class="btn btn-primary btn-lg">Lire plus</a>
+                    <a href="https://fr.wikipedia.org/wiki/Arts_martiaux_mixtes" class="btn btn-primary btn-lg" target="_blank">
+                      Lire plus
+                    </a>
                 </div>
                 <div class="col-lg-6">
                     <img src="./assets/images/Gracie-Shamrock.webp" class="img-fluid"/>
+                    <img src="./assets/images/pancrace.jpeg" class="img-fluid"/>
                 </div>
             </div>
         </div>
@@ -307,7 +362,7 @@
                   <div class="card card-height">
                       <img class="card-img-top card-img-shop" src="./assets/images/equipement.webp"/>
                       <div class="card-body text-center">
-                          <a href="#" class="btn btn-outline-secondary">Voir les équipements</a>
+                          <a href="./assets/html/equipment.html" class="btn btn-outline-secondary">Voir les équipements</a>
                       </div>
                   </div>
               </div>
@@ -316,7 +371,7 @@
                   <div class="card card-height">
                       <img class="card-img-top card-img-shop" src="./assets/images/vetement.jpeg"/>
                       <div class="card-body text-center">
-                          <a href="#" class="btn btn-outline-secondary">Voir les vêtements</a>
+                          <a href="./assets/html/cloth.html" class="btn btn-outline-secondary">Voir les vêtements</a>
                       </div>
                   </div>
               </div>
@@ -325,7 +380,7 @@
                   <div class="card card-height">
                       <img class="card-img-top card-img-shop" src="./assets/images/whey.avif"/>
                       <div class="card-body text-center">
-                          <a href="#" class="btn btn-outline-secondary">Voir les compléments alimentaires</a>
+                          <a href="./assets/html/complement.html" class="btn btn-outline-secondary">Voir les compléments alimentaires</a>
                       </div>
                   </div>
               </div>
@@ -373,12 +428,11 @@
         <section class="contact" aria-label="call to action" id="contact">
           <div class="container">
 
-            <h2 class="h2 section-title text-center">
-              Contacte nous !
+            <h2 class="h2 section-title">
+              <p class="align-items">
+                Contacte nous !
+              </p>
             </h2>
-
-            <a href="#" class="btn btn-primary">Try it For Free</a>
-
           </div>
         </section>
 
@@ -459,7 +513,7 @@
           </p>
 
           <form action="" class="input-wrapper">
-            <input type="email" name="email_address" placeholder="Email Address" required class="input-field">
+            <input type="email" name="email_address" placeholder="Adresse email" required class="input-field">
 
             <button type="submit" class="submit-btn">Rejoins-nous</button>
           </form>

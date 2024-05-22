@@ -104,7 +104,7 @@ const initSlider = function(currentSlider) {
   const startSliderAutoPlay = function () {
     setInterval(() => {
         slideNext();
-    }, 10000);
+    }, 20000);
   }
 
   startSliderAutoPlay();
